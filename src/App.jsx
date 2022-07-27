@@ -1,9 +1,12 @@
 import { useState } from 'react';
-
+import { Provider } from 'react-redux';
+import { store } from 'react-redux';
 import './App.css';
 
 function App() {
-  return <Routes />;
+  <Provider store={store}>
+    return <Routes />;
+  </Provider>;
 }
 
 export default App;
